@@ -1,0 +1,27 @@
+name: travelling-salesman-ga
+version: 0.0.1
+cabal-version: 1.22
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+copyright: (c) Artem Tsushko, 2015
+maintainer: artem.tsushko@gmail.com
+stability: stable
+synopsis: Solves travelling salesman problem using genetic algorithm
+description:
+
+category: Learning
+author: Artem Tsushko
+
+executable travelling-salesman-ga
+    main-is: Main.hs
+    build-depends:
+        array -any,
+        base -any,
+        random -any
+    default-language: Haskell2010
+    hs-source-dirs: src
+    other-modules:
+        TSP.GeneticAlgorithm
+    ghc-options: -ferror-spans
+
